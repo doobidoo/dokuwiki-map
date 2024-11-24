@@ -26,7 +26,8 @@ function openPageEvent(params) {
   if (params.nodes.length) {
     const nodeid = params.nodes[0];
     const page = encodeURIComponent(unwrap(nodes.get(nodeid).label));
-    const url = `http://en.wikipedia.org/wiki/${page}`;
+    // const url = `http://en.wikipedia.org/wiki/${page}`;
+    const url = `http://10.0.1.56/dmi/doku.php/${page}`;
     window.open(url, '_blank');
   }
 }
